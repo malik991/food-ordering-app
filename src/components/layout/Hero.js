@@ -17,11 +17,11 @@ export default function Hero() {
           delicious joy in life
         </p>
         <div className="flex gap-4 text-sm">
-          <button className="bg-primary uppercase flex gap-1 items-center hover:bg-slate-500 px-5 py-2 rounded-full text-white">
+          <button className="bg-primary justify-center uppercase flex gap-1 items-center hover:bg-slate-500 px-5 py-2 rounded-full text-white">
             Order Now
             <Right />
           </button>
-          <button className="bg-slate-500 flex gap-1 hover:bg-primary px-5 py-2 rounded-full text-white">
+          <button className="bg-slate-500 flex items-center gap-1 hover:bg-primary px-5 py-2 rounded-full text-white">
             Learn More
             <RounderRight />
           </button>

@@ -29,3 +29,6 @@ button, .button{
 button[type="submit"], .submit, button.primary{
     @apply border-primary bg-primary text-white hover:bg-secondry;
 }
+button[type="submit"]:disabled, .submit:disabled{
+    @apply cursor-not-allowed bg-red-400;
+}
