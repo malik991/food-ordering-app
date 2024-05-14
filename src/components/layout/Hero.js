@@ -2,8 +2,8 @@ import Image from "next/image";
 import Right, { RounderRight } from "../icons/Right";
 export default function Hero() {
   return (
-    <section className="hero">
-      <div className="py-12">
+    <section className="hero md:mt-4">
+      <div className="pb-8 pt-3 md:py-12">
         <h1 className="text-4xl font-semibold">
           Everything
           <br />
@@ -27,12 +27,18 @@ export default function Hero() {
           </button>
         </div>
       </div>
-      <div className="relative">
+      <div
+        className="relative hidden md:block"
+        style={{ width: "100%", height: "400px" }}
+      >
         <Image
+          className=""
           src={"/pizza.png"}
-          layout={"fill"}
-          objectFit={"contain"}
+          fill
+          style={{ objectFit: "contain" }}
           alt="Alrehman Pizza"
+          priority={true}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
     </section>

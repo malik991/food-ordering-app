@@ -12,6 +12,34 @@ const UserSchema = new mongoose.Schema(
       type: String,
       required: [true, "Password is required"],
     },
+    name: {
+      type: String,
+    },
+    image: {
+      type: String,
+    },
+    public_id: {
+      type: String,
+    },
+    mobile: {
+      type: String,
+    },
+    Street: {
+      type: String,
+    },
+    postCode: {
+      type: String,
+    },
+    city: {
+      type: String,
+    },
+    country: {
+      type: String,
+    },
+    IsAdmin: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );
